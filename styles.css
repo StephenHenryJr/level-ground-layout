@@ -1,0 +1,237 @@
+/*********************** Base Styles ***********************/
+
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    font-weight: lighter;
+    background-color: var(--main-blue);
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+:root {
+    --main-darkest-blue: #141E26;
+    --main-blue: #66768A;
+    --main-blue-grey: #161F2A;
+    --main-light-grey: #DBDFE2;
+    --main-off-white: #F2F2F2;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+a {
+    color: var(--main-off-white);
+    text-decoration: none;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-off-white);
+    background-color: var(--main-blue);
+    opacity: 0.90;
+}
+
+li:first-child {
+    margin: 0;
+}
+
+.logo {
+/* Because it was not centred using flex */
+    position: absolute;
+    left: 48%;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.nav-button {
+    color: var(--main-blue);
+    background-color: var(--main-off-white);
+    border-radius: 4px;
+    padding: 0.75rem;
+
+    border: none;
+}
+
+/*********************** Landing-Page Section ***********************/
+
+.landing-page {
+    background-color: var(--main-blue);
+    text-align: center;
+    color: var(--main-off-white);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    border: 1px solid white;
+    min-height: 100vh;
+}
+
+.landing-page div {
+    max-width: 1200px;
+    margin: 0 auto;;
+    text-align: center;
+}
+
+.landing-page h1 {
+    font-size: 8rem;
+    margin: 20rem 0 5rem 0;
+    padding: 4rem;
+}
+
+.landing-page p {
+    font-size: 3rem;
+    margin-bottom: 10rem;
+}
+
+.landing-page i {
+    font-size: 2.5rem;
+}
+
+.landing-page span {
+    color: var(--main-darkest-blue);
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 20rem;
+}
+
+/*********************** Why Section ***********************/
+
+.why-section, .volunteer-section {
+    background-color: var(--main-off-white);
+    min-height: 75vh;
+    color: var(--main-darkest-blue);
+    display: flex;
+    align-items: center;
+}
+
+.why-section div, .volunteer-section div {
+    max-width: 800px;
+    margin: 0 auto;;
+    text-align: center;
+}
+
+.why-section h2, .volunteer-section h2 {
+    font-size: 5rem;
+    padding: 4rem;
+}
+
+.why-section p, .volunteer-section p {
+    font-size: 2.5rem;
+    margin: ;
+}
+
+/*********************** Visitation Section ***********************/
+ 
+.visitation-section {
+    min-height: 100vh;
+    background-color: var(--main-light-grey);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headline {
+    max-width: 500px;
+    text-align: center;
+}
+
+.headline img {
+    background-color: var(--main-blue);
+    width: 40rem;
+    height: 25rem;
+}
+
+.headline h3 {
+    margin: 3rem 0;
+    font-size: 3rem;
+}
+
+.headline p {
+    margin: 3rem 0;
+}
+
+.headline button {
+    font-size: 1.5rem;
+    background-color: var(--main-light-grey);
+    border: 1px solid var(--main-darkest-blue);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+}
+
+/*********************** Volunteer Section ***********************/
+
+.volunteer-section button {
+    font-size: 1.5rem;
+    background-color: var(--main-off-white);
+    border: 1px solid var(--main-darkest-blue);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    margin-top: 3rem;
+}
+
+/*********************** Footer Section ***********************/
+footer {
+    padding: 3rem;
+    color: var(--main-off-white);
+    background-color: var(--main-blue-grey);
+}
+
+footer .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container:first-child {
+    align-items: flex-start;
+}
+
+footer hr {
+    border: 1px solid black;
+    width: 90%;
+    margin: 2rem auto;
+    border: 1px solid var(--main-off-white);
+}
+
+footer i {
+    font-size: 3rem;
+}
+
+.left-side h4 {
+    color: var(--main-blue);
+    margin: 2rem 0 0.5rem 0;
+}
+
+.right-side h4 {
+    margin-bottom: 1rem;
+}
+
+.right-side p {
+    color: grey;
+    margin-bottom: 0.5rem;
+}
